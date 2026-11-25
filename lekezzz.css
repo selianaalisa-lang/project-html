@@ -1,0 +1,154 @@
+*,
+html {
+  margin: 0; 
+  padding: 0; 
+}
+
+.container {}
+
+.container-navbar {
+  background-color: rgb(122, 19, 14);
+  width: 100%;   
+  height: 15vh;
+}
+
+.ul-navbar {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.li-navbar {
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  color: rgb(12, 120, 13);
+  font-size: 30;
+}
+
+.li-navbar:hover {
+  background-color: rgb(11, 121, 15);
+  transition: .7s ease-in-out;
+  transition-delay: .3s;
+  border-radius: 8px;
+}
+
+.a-navbar {
+  color: rgb(240, 239, 233);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.container-content {
+  background-color: rgb(222, 115, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.a-content {
+  background-color: rgb(10, 119, 8);
+  color: rgb(255, 255, 233);
+  text-decoration: none;
+  font-size: 20px;
+  width: 550px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 80px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.maps-content {
+  width: 50%;
+  height: 50%;
+}
+
+.img-content {
+ width: 50%; 
+ height: 50%;
+}
+
+.container-footer {
+  height: 5vh;
+  background-color: rgb(106, 2, 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1-footer {
+  font-size: 20px;
+  color: rgb(245, 244, 241);
+}
+
+/* BACKGROUND MENU */
+.container-content {
+    background-color: #f16e0a;
+    padding: 25px;
+    min-height: 100vh;
+}
+
+/* JUDUL MENU */
+.container-content h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* SUSUNAN KARTU MENU */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* KARTU MENU */
+.menu-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* FOTO MAKANAN */
+.menu-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* NAMA MAKANAN */
+.menu-card h3 {
+    font-size: 15px;
+    margin: 10px;
+    color: #333;
+}
+
+/* DESKRIPSI */
+.menu-card p {
+    font-size: 12px;
+    margin: 10px;
+    color: gray;
+}
+
+/* HARGA */
+.harga {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 10px;
+}
+
+/* TAMPILAN TABLET DAN HP */
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
